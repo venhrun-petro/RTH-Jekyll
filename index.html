@@ -10,343 +10,163 @@
     <meta name="msapplication-TileColor" content="#E6E6FA">
     <meta name="msapplication-TileImage" content="S">
     <meta name="theme-color" content="#E6E6FA">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<style>
-
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .container {
-    margin: 0 auto;
-    display: block;
-    width: 74%;
-  }
-
-  .header {
-    display: block;
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    padding: 40px 0;
-    z-index: 2;
-  }
-
-  .logo {
-    float: left;
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Montserrat Alternates', sans-serif;
-  }
-
-  .logo:hover {
-    color: #c0301c;
-    cursor: pointer;
-  }
-
-  .logo:focus {
-    outline: none;
-  }
-
-  .nav {
-    float: right;
-  }
-
-  .nav ul {
-    margin: 0;
-  }
-
-  .nav ul li {
-    float: left;
-    list-style: none;
-    font-size: 14px;
-    margin: 5px 15px;
-  }
-
-  .nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-
-  .nav ul li a:hover {
-    color: #c0301c;
-    cursor: pointer;
-  }
-
-  .main {
-    width: 100%;
-    z-index: 1;
-  }
-
-  .startup {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .startup-opasiti, .collection-opasiti {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    position: relative;
-    display: block;
-  }
-
-  .startup_img {
-    width: inherit;
-    height: 100%;
-    margin: 0;
-    display: block;
-    position: absolute;
-    background-position: center;
-    object-fit: cover;
-    background-repeat: no-repeat;
-  }
-
-  .startup-cont {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .startup-cont .startup-title {
-    margin: 0;
-    font-size: 45px;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  .startup-cont .startup-title .agenzi {
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: none;
-  }
-
-  .startup-btn {
-    background-color: transparent;
-    padding: 0;
-    margin: 40px auto;
-    position: relative;
-    width: 175px;
-    height: 50px;
-    overflow: hidden;
-    cursor: pointer;
-    border: 1px solid white;
-  }
-
-  .startup-btn .btn-txt {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    color: white;
-    transition: all 0.9s;
-    width: 100%;
-  }
-
-  .startup-btn .btn-hov {
-    width: 25%;
-    float: left;
-    background-color: white;
-    position: relative;
-    margin: 0;
-    height: 100%;
-    transition: all 0.9s;
-  }
-
-  .startup-btn .btn-top {
-    bottom: 175px;
-  }
-
-  .startup-btn .btn-bottom {
-    top: 175px;
-  }
-
-  .startup-btn:hover .btn-bottom {
-    top: 0;
-  }
-
-  .startup-btn:hover .btn-top {
-    bottom: 0;
-  }
-
-  .startup-btn:hover .btn-txt {
-    color: #c0301c;
-  }
-
-  .startup-btn:focus {
-    outline: none;
-  }
-
-  .current {
-    color: black;
-  }
-
-  @media (max-width: 900px) {
-    .general-container {
-      width: 86%;
-    }
-  }
-
-  @media (max-width: 767px) {
-    .nav {
-      display: none;
-    }
-
-    .open-close-menu {
-      display: block;
-      float: right;
-      z-index: 9999;
-      margin: 5px 0 0 0;
-      cursor: pointer;
-    }
-
-    .open-close-menu .strip {
-      width: 45px;
-      height: 2px;
-      background-color: white;
-      margin: 10px 0;
-    }
-
-    .prob {
-      display: block;
-    }
-
-    .burger {
-      display: inline-block;
-      margin-bottom: 11px;
-    }
-
-    .nav {
-      float: left;
-      position: absolute;
-      margin-top: 50px;
-      left: 0;
-      width: 100%;
-    }
-
-    .nav ul {
+  <style>
+    body {
+      margin: 0;
       padding: 0;
-    }
+      display: flex;
+      flex-direction: column; }
 
-    .nav ul li {
-      float: none;
-      text-align: center;
+    .container {
+      margin: 0 auto;
+      display: block;
+      width: 74%; }
+
+    .header {
+      display: block;
+      position: absolute;
       width: 100%;
       margin: 0;
-      padding: 10px 0;
-      border-bottom: 1px solid red;
-      background-color: rgba(192, 48, 28, 0.8);
-    }
+      padding: 40px 0;
+      z-index: 2; }
 
+    .logo {
+      float: left;
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: 'Montserrat Alternates', sans-serif; }
+    .logo:hover {
+      color: #c0301c;
+      cursor: pointer; }
+    .logo:focus {
+      outline: none; }
+
+    .nav {
+      float: right; }
+    .nav ul {
+      margin: 0; }
+    .nav ul li {
+      float: left;
+      list-style: none;
+      font-size: 14px;
+      margin: 5px 15px; }
     .nav ul li a {
-      text-transform: uppercase;
-    }
-
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      letter-spacing: 1px; }
     .nav ul li a:hover {
-      color: black;
-    }
+      color: #c0301c;
+      cursor: pointer; }
 
-    .idea-container {
-      flex-direction: column;
-    }
-
-    .idea-container .idea-container_cont-img, .idea-container .idea-container_cont-txt {
-      width: calc(100% - 30px);
-      margin: 10px 15px;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .startup, .startup_img {
-      min-height: 520px;
-    }
-
-    .services .services_block {
-      width: calc(100% - 30px);
-      margin: 0 15px;
-    }
-
-    .tabContent .tabContent_block-img {
-      width: calc(100% / 2 - 30px);
-    }
-
-    .clients-logo {
-      width: calc(100% / 5 - 10px);
-      margin: 0 5px;
-    }
-
-    .info-cont {
-      order: 1;
-      margin: 0 auto;
+    .main {
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding-left: 0;
-    }
+      z-index: 1; }
 
-    .info_title, .info_txt {
-      margin-top: 3px;
-    }
+    .startup {
+      width: 100%;
+      height: 100vh; }
 
-    .registration {
-      max-width: 100%;
-    }
+    .startup-opasiti, .collection-opasiti {
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: relative;
+      display: block; }
 
-    .flex-container {
-      flex-direction: column;
-    }
-  }
+    .startup_img {
+      width: inherit;
+      height: 100%;
+      margin: 0;
+      display: block;
+      position: absolute;
+      background-position: center;
+      object-fit: cover;
+      background-repeat: no-repeat; }
 
-  @media (max-width: 480px) {
-    .about_text-information {
-      width: calc(100% - 52px);
-      margin: 22px;
-    }
+    .startup-cont {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-family: 'Montserrat', sans-serif; }
+    .startup-cont .startup-title {
+      margin: 0;
+      font-size: 45px;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .startup-cont .startup-title .agenzi {
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: none; }
 
-    .tabContent .tabContent_block-img {
-      width: calc(100% - 30px);
-    }
+    .startup-btn {
+      background-color: transparent;
+      padding: 0;
+      margin: 40px auto;
+      position: relative;
+      width: 175px;
+      height: 50px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid white; }
+    .startup-btn .btn-txt {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      color: white;
+      transition: all 0.9s;
+      width: 100%; }
+    .startup-btn .btn-hov {
+      width: 25%;
+      float: left;
+      background-color: white;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      transition: all 0.9s; }
+    .startup-btn .btn-top {
+      bottom: 175px; }
+    .startup-btn .btn-bottom {
+      top: 175px; }
+    .startup-btn:hover .btn-bottom {
+      top: 0; }
+    .startup-btn:hover .btn-top {
+      bottom: 0; }
+    .startup-btn:hover .btn-txt {
+      color: #c0301c; }
+    .startup-btn:focus {
+      outline: none; }
 
-    .info-cont {
-      flex-direction: column;
-      width: auto;
-      padding-left: 50px;
-    }
-
-    .tab {
-      float: none;
-      text-align: left;
-    }
-  }
+    .current {
+      color: black; }
 
   </style>
-  <noscript>
-    <link rel="stylesheet" href="assets/styles/main.css">
-  </noscript>
+
+    <noscript>
+        <link rel="stylesheet" href="assets/styles/main.css">
+    </noscript>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
 
 </head>
 
 
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <div class="general-container" >
-    <a class="logo" id="logo" href="#logo">Startup</a>
+    <a class="logo" id="logo" href="#header">Startup</a>
         <div class="burger clearfix ">
             <div class=burger-menu></div>
             <div class=burger-menu></div>
@@ -358,50 +178,50 @@
         
         
         
-          <li class="firstcurrent">
-              <a href="/">Home</a>
+          <li class="first">
+              <a href="#header">Home</a>
           </li>
 
           
         
         
           <li class="">
-              <a href="/Servsces/">Services</a>
+              <a href="#services">Services</a>
           </li>
 
           
         
         
           <li class="">
-              <a href="/About/">About</a>
+              <a href="#about">About</a>
           </li>
 
           
         
         
           <li class="">
-              <a href="/Works/">Works</a>
+              <a href="#Works">Works</a>
           </li>
 
           
         
         
           <li class="">
-              <a href="/Blog/">Blog</a>
+              <a href="#blog">Blog</a>
           </li>
 
           
         
         
           <li class="">
-              <a href="/Clients/">Clients</a>
+              <a href="#client">Clients</a>
           </li>
 
           
         
         
           <li class="">
-              <a href="/Contact/">Contact</a>
+              <a href="#Contact">Contact</a>
           </li>
 
           
@@ -417,7 +237,7 @@
 
 <main class="main">
   <section class="startup">
-    <img class="startup_img lazy-img" data-src="images/Layer.png" alt="Layer">
+    <img class="startup_img " src="images/Layer.png" alt="Layer">
 <div class="startup-opasiti">
 <div class="startup-cont">
 <h1 class="startup-title">Welcome to STARTUP<br>
@@ -429,13 +249,12 @@
     <div class="btn-hov btn-bottom"></div>
     <span class="btn-txt">Get Started</span>
   </button>
-  <div id="prob"></div>
 </div>
 
 </div>
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="general-container">
     <h3 class="services_general-title">Services</h3><br>
     <strong class="services_row">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</strong><br>
@@ -461,7 +280,7 @@
 </div>
   </section>
 
-  <section class="s-lazy slider" data-sizes="50vw">
+  <section class="s-lazy slider" id="about" data-sizes="50vw">
     <div class="general-container">
     <h3 class="services_general-title">About us</h3><br>
     <strong class="services_row">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</strong><br>
@@ -633,7 +452,7 @@
   </section>
 
 
-  <section class="my_tabs">
+  <section class="my_tabs" id="Works">
     <div class="general-container">
 
       <h3 class="services_general-title">Latest Works</h3><br>
@@ -838,6 +657,12 @@
         </div>
         </div>
         
+
+      </div>
+      
+      <div class="tabContent">
+
+        
         <div class="tabContent_block-img">
         <img class="tab-img lazy-img" src="images/camera.png" alt="camera">
         <div class="tabContent-hover">
@@ -879,6 +704,12 @@
 
         </div>
         </div>
+        
+
+      </div>
+      
+      <div class="tabContent">
+
         
         <div class="tabContent_block-img">
         <img class="tab-img lazy-img" src="images/office.png" alt="office">
@@ -929,35 +760,7 @@
 
         
         <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/woman.png" alt="woman">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
         <img class="tab-img lazy-img" src="images/birdie.png" alt="birdie">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/book.png" alt="book">
         <div class="tabContent-hover">
 
           <div class="tabContent-hover_center">
@@ -986,312 +789,6 @@
         
         <div class="tabContent_block-img">
         <img class="tab-img lazy-img" src="images/level.png" alt="level">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/copybook.png" alt="copybook">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/office.png" alt="office">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/picture.png" alt="picture">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/events.png" alt="events">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-
-      </div>
-      
-      <div class="tabContent">
-
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/woman.png" alt="woman">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/birdie.png" alt="birdie">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/book.png" alt="book">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/camera.png" alt="camera">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/level.png" alt="level">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/copybook.png" alt="copybook">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/office.png" alt="office">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/picture.png" alt="picture">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/events.png" alt="events">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-
-      </div>
-      
-      <div class="tabContent">
-
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/woman.png" alt="woman">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/birdie.png" alt="birdie">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/book.png" alt="book">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/camera.png" alt="camera">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/level.png" alt="level">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/copybook.png" alt="copybook">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/office.png" alt="office">
-        <div class="tabContent-hover">
-
-          <div class="tabContent-hover_center">
-          <h3 class="tab-title">Hair Dresser</h3>
-          <p class="tab-brand">Branding</p>
-            <button class="tab-btn">VIEW <i class="fas fa-chevron-right"></i></button>
-          </div>
-<!--<i class="far fa-chevron-left"></i>-->
-
-        </div>
-        </div>
-        
-        <div class="tabContent_block-img">
-        <img class="tab-img lazy-img" src="images/picture.png" alt="picture">
         <div class="tabContent-hover">
 
           <div class="tabContent-hover_center">
@@ -1341,7 +838,7 @@
       </div>
     </div>
   </section>
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="general-container">
       <h3 class="services_general-title">Recent blog posts</h3>
       <br>
@@ -1385,7 +882,7 @@
       
     </div>
   </section>
-  <section class="s-lazy slider" data-sizes="50vw">
+  <section class="s-lazy slider" id="client" data-sizes="50vw">
     <div class="general-container">
       <div class="clients-logo-cont">
         
@@ -1426,8 +923,8 @@
       </div>
     </div>
   </section>
-
-  <section class="contact">
+  <div id="prob"></div>
+  <section class="contact" id="Contact">
     <div class="general-container">
       <h3 class="services_general-title">Get in touch</h3><br>
       <strong class="services_row">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</strong><br>
@@ -1455,24 +952,28 @@
               <div class="cont-imput" id="cont-imput">
                 <span>
                 <input class="myinput" name="from" type="text" placeholder="NAME">
-
+                  <p class="none"></p>
                 </span>
               </div>
           <div class="cont-imput">
             <span>
                 <input class="myinput" name="email" type="email" placeholder="YOUR E-MAIL">
+               <p class="none"></p>
             </span><br>
           </div>
           <div  class="cont-imput">
             <span>
-              <input class="myinput" name="subject" placeholder="YOUR SUBJECT"></span>
+              <input class="myinput" name="subject" placeholder="YOUR SUBJECT">
+             <p class="none"></p></span>
           </div> <div  class="cont-imput">
           <span>
                 <input class="myinput" name="company" type="text" placeholder="COMPANY NAME">
+             <p class="none"></p>
           </span>
           </div>
           <div id="messag">
             <textarea name="message" placeholder="WRITE YOUR MESSAGE"></textarea>
+             <p class="none"></p>
           </div>
           <h1 class="finisch" name="finisch" id="finisch">Thank you! Check your email for further details on data submitted.</h1>
 
@@ -1508,7 +1009,7 @@
 </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
 
 
